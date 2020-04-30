@@ -40,8 +40,10 @@ export default class App extends React.Component {
 
 - [expo app build](https://docs.expo.io/distribution/building-standalone-apps/)
 
+#### Configure app.json
+
 ```json
-// app.json 안에 추가
+// app.json 파일 하단에 추가
 "ios": {
     "bundleIdentifier": "com.yourcompany.yourappname",
     "buildNumber": "1.0.0"
@@ -51,3 +53,15 @@ export default class App extends React.Component {
     "versionCode": 1
 }
 ```
+
+#### Start the build
+
+```bash
+expo build:android
+or 
+expo build:ios
+```
+
+### 스마트폰 장치에 접근 권한이 필요할 경우
+
+- [expo permission](https://docs.expo.io/versions/latest/sdk/permissions/)
