@@ -39,3 +39,15 @@ export default class App extends React.Component {
 ### Build
 
 - [expo app build](https://docs.expo.io/distribution/building-standalone-apps/)
+
+```json
+// app.json 안에 추가
+"ios": {
+    "bundleIdentifier": "com.yourcompany.yourappname",
+    "buildNumber": "1.0.0"
+},
+"android": {
+    "package": "com.yourcompany.yourappname",
+    "versionCode": 1
+}
+```
