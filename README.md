@@ -4,5 +4,38 @@
 
 ## 사용 기술
 
-- react-native
 - expo
+- react-native
+- react-native-webview
+
+### Webview
+
+- [expo react native webview](https://docs.expo.io/versions/latest/sdk/webview/)
+
+#### Installation
+
+```bash
+expo install react-native-webview
+```
+
+#### Usage
+
+```js
+import * as React from 'react';
+import { WebView } from 'react-native-webview';
+
+export default class App extends React.Component {
+  render() {
+    return <WebView source={{ uri: 'https://expo.io' }} style={{ marginTop: 20 }} />;
+  }
+}
+```
+
+### APP Icons
+
+- [expo app icon](https://docs.expo.io/guides/app-icons/)
+- [Configuring a splash screen and app icon](https://docs.expo.io/tutorial/configuration/)
+
+### Build
+
+- [expo app build](https://docs.expo.io/distribution/building-standalone-apps/)
